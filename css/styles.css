@@ -2,7 +2,7 @@
   --accent-color: #2196f3;
   --title-color: #212121;
   --main-color: #757575;
-  --hero-text-color: #fff;
+  --accent-btn-color: #fff;
 
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
@@ -65,6 +65,9 @@ body {
 .header-info-link:focus {
   color: var(--accent-color);
 }
+.nav-list-link.active {
+  color: var(--accent-color);
+}
 /* ===================== END HEADER ===================== */
 /* ===================== FOOTER ===================== */
 .footer {
@@ -78,7 +81,7 @@ body {
   letter-spacing: 0.03em;
 }
 .footer-info-text {
-  color: #ffffff;
+  color: var(--accent-btn-color);
 }
 .footer-info-link {
   color: rgba(255, 255, 255, 0.6);
@@ -98,7 +101,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--hero-text-color);
+  color: var(--accent-btn-color);
 }
 
 .btn {
@@ -111,7 +114,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--hero-text-color);
+  color: var(--accent-btn-color);
 }
 /* END HERO */
 /* SKILLS */
@@ -161,5 +164,38 @@ body {
 /* END EMPLOYEES */
 /* ===================== END BODY INDEX ===================== */
 /* ===================== BODY PORTFOLIO ===================== */
+.portfolio-control-item .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 
-/* ===================== END BODY PORTFOLIO ===================== */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+.portfolio-control-item .btn:hover,
+.portfolio-control-item .btn:focus {
+  background-color: var(--accent-color); /* just to make text visible */
+  color: var(--accent-btn-color);
+}
+
+.portfolio-content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.portfolio-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+/* ===================== END BODY PORTFOLIO ===================== */ ;
