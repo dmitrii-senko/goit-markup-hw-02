@@ -17,7 +17,9 @@
 
   background-color: aquamarine; /* temporary */
 }
-
+.btn {
+  font-family: inherit;
+}
 /* ===================== LOGO ===================== */
 .logo-link {
   font-family: var(--logo-font);
@@ -91,6 +93,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  font-style: normal;
 
   letter-spacing: 0.03em;
 
@@ -138,7 +141,7 @@
 
   color: var(--alternative-text-color);
 }
-.hero .btn {
+.hero > .btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -200,7 +203,11 @@
 /* ===================== END INDEX HTML ===================== */
 
 /* ===================== PORTFOLIO HTML ===================== */
-.portfolio-nav-item .btn {
+.portfolio-nav-list,
+.portfolio-content-list {
+  list-style-type: none;
+}
+.portfolio-nav-item > .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -209,8 +216,8 @@
 
   color: var(--title-color);
 }
-.portfolio-nav-item .btn:hover,
-.portfolio-nav-item .btn:focus {
+.portfolio-nav-item > .btn:hover,
+.portfolio-nav-item > .btn:focus {
   color: var(--alternative-text-color);
 }
 .portfolio-content-title {
@@ -220,7 +227,7 @@
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--title-color);
 }
 .portfolio-content-text {
   font-weight: normal;
